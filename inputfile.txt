@@ -1,0 +1,50 @@
+google.com
+youtube.com
+facebook.com
+amazon.com
+wikipedia.org
+twitter.com
+ebay.com
+yahoo.com
+reddit.com
+yelp.com
+buzzfeed.com
+adobe.com
+bing.com
+linkedin.com
+live.com
+pinterest.com
+netflix.com
+wikia.com
+craigslist.org
+wordpress.com
+walmart.com
+Hidden profile
+nytimes.com
+Hidden profile
+urbandictionary.com
+espn.com
+apple.com
+Hidden profile
+chase.com
+weather.com
+tripadvisor.com
+msn.com
+Hidden profile
+Hidden profile
+bustle.com
+webmd.com
+instagram.com
+usatoday.com
+twentytwowords.com
+legacy.com
+indeed.com
+paypal.com
+Hidden profile
+stackexchange.com
+imdb.com
+zillow.com
+giphy.com
+whitepages.com
+etsy.com
+quora.com
