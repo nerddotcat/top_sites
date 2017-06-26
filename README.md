@@ -1,17 +1,18 @@
 ## Site Performance
 
-Loads a list of sites from a text file and prints the 5 fastest and slowest sites.
-
-Requires requests package.
+Python script that loads a list of sites from a text file and prints the 5 fastest and slowest sites.
 
 Should work with both python 2 and 3.
 
-Input file should contain sites to visit separated by newlines.
+Input file should contain sites to visit separated by whitespace.
 
-Quantcast top site formatted with the following:
-  head -n 56 Quantcast-Top-Million.txt | tail -n 50 | cut -d$'\t' -f 2 > sitelist.txt
+Quantcast top sites list formatted as follows:
+```
+head -n 56 Quantcast-Top-Million.txt | tail -n 50 | cut -d$'\t' -f 2 > sitelist.txt
+```
 
 
+Script usage:
 ```
 usage: top_site_perf.py [-h] [-v] path
 

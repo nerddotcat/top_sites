@@ -4,11 +4,6 @@ import requests
 import argparse
 import sys
 
-"""
-  Quantcast top site formatted with the following:
-  head -n 56 Quantcast-Top-Million.txt | tail -n 50 | cut -d$'\t' -f 2 > sitelist.txt
-"""
-
 
 def loadSiteList(fileName):
   """Returns list of domains from given file.
@@ -23,7 +18,7 @@ def loadSiteList(fileName):
   """
   fp = open(fileName,'r')
   #get sites and throw out blank lines
-  siteList = [ x for x in fp.read().split('\n') if len(x) > 0]
+  siteList = [ x for x in fp.read().split() if len(x) > 0]
   fp.close()
   return siteList
 
