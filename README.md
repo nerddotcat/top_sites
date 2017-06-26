@@ -8,11 +8,16 @@ Input file should contain sites to visit separated by whitespace.
 
 Quantcast top sites list formatted as follows:
 ```
-head -n 56 Quantcast-Top-Million.txt | tail -n 50 | cut -d$'\t' -f 2 > sitelist.txt
+head -n 56 Quantcast-Top-Million.txt | tail -n 50 | cut -d$'\t' -f 2 > inputfile.txt
 ```
 
 
 Script usage:
+```
+./top_site_perf.py inputfile
+```
+
+Help text:
 ```
 usage: top_site_perf.py [-h] [-v] path
 

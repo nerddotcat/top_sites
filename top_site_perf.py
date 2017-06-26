@@ -8,7 +8,7 @@ import sys
 def loadSiteList(fileName):
   """Returns list of domains from given file.
     
-    Assumes that the file is a list of each site separated by a newline.
+    Assumes that the file is a list of each site separated by whitespace.
     
     Args:
       fileName (str): Path to the file we want to get sites from.
@@ -46,7 +46,7 @@ def visitSite(site, verbose=False):
     
     if verbose:
       print("[+] Visited {} {}kb {}s".format(site, siteData['sizekb'], siteData['time']) )
-  
+  #if we fail to load the site for any reason
   #consider handling other types of exceptions
   except Exception as e:
     siteData['ok'] = False
@@ -60,7 +60,7 @@ def getMedian(values,attribute):
   """Returns median value from values list, with the given attribute
     
     Args:
-      values (list of dictionaries): Assumed that this is sorted based on attribute
+      values (list of dictionaries): Assumed that this is already sorted based on attribute
       attribute (str): name of attribute from dictionary defined from visitSite function
       
     Returns:
